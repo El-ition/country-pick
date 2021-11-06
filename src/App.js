@@ -19,7 +19,7 @@ function App() {
     };
     fetchData();
   }, []);
-  console.log(allData);
+  // console.log(allData);
 
   const clickedCountry = (id) => {
     const newOne = allData.filter((data) => {
