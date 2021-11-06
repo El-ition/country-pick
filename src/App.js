@@ -6,7 +6,7 @@ import CountrySpec from './pages/CountrySpec';
 import HomePage from './pages/HomePage';
 
 function App() {
-  const [allData, setAllData] = useState([]);
+  const [allData, setAllData] = useState();
   const [highDetCount, setHighDetCount] = useState('');
   useEffect(() => {
     const fetchData = async () => {
@@ -19,7 +19,7 @@ function App() {
     };
     fetchData();
   }, []);
-  // console.log(allData);
+  console.log(allData);
 
   const clickedCountry = (id) => {
     const newOne = allData.filter((data) => {
@@ -29,19 +29,23 @@ function App() {
     setHighDetCount(...newOne);
   };
 
-  console.log(highDetCount);
+  // console.log(highDetCount);
 
   return (
     <>
       <Navbar />
-      <Switch>
-        <Route exact path="/">
-          <HomePage allData={allData} clickedCountry={clickedCountry} />
-        </Route>
-        <Route>
-          <CountrySpec path="/country/:name" highDetCount={highDetCount} />
-        </Route>
-      </Switch>
+      {!allData ? (
+        <div>Loading!</div>
+      ) : (
+        <Switch>
+          <Route exact path="/">
+            <HomePage allData={allData} clickedCountry={clickedCountry} />
+          </Route>
+          <Route>
+            <CountrySpec path="/country/:name" highDetCount={highDetCount} />
+          </Route>
+        </Switch>
+      )}
     </>
   );
 }
