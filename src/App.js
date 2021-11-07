@@ -22,7 +22,7 @@ function App() {
   // console.log(allData);
 
   const clickedCountry = (id) => {
-    const newOne = allData.filter((data) => {
+    let newOne = allData.filter((data) => {
       return id === data.id;
     });
 

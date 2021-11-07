@@ -7,11 +7,11 @@ function CountryLowDet({ data, clickedCountry }) {
   };
   return (
     <div>
+      <img src={data.flags.png} alt={data.name} />
       <h1>{data.name}</h1>
-      {/* <img src={data.flags.png} alt="" /> */}
-      <h3>capital: {data.capital}</h3>
+      <h3>Population: {data.population.toLocaleString()}</h3>
       <h3>region: {data.region}</h3>
-      <h5>native name: {data.nativeName}</h5>
+      <h3>capital: {data.capital}</h3>
       <Link to={`/country/${data.name}`} onClick={switchTomoreDetail}>
         Click to see More!!
       </Link>
