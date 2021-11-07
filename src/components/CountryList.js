@@ -3,7 +3,7 @@ import CountryLowDet from './CountryLowDet';
 
 function CountryList({ allData, clickedCountry }) {
   return (
-    <>
+    <div className="countryList">
       {allData.map((data) => (
         <CountryLowDet
           key={data.id}
@@ -11,7 +11,7 @@ function CountryList({ allData, clickedCountry }) {
           clickedCountry={clickedCountry}
         />
       ))}
-    </>
+    </div>
   );
 }
 

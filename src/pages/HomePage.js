@@ -57,11 +57,11 @@ function HomePage({ allData, clickedCountry }) {
       setSearchedData(allData);
     }
   };
-  console.log(searchedData);
+  // console.log(searchedData);
 
   return (
-    <div>
-      <div>
+    <div className="homepage">
+      <div className="homepage__search">
         <input
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
@@ -86,7 +86,9 @@ function HomePage({ allData, clickedCountry }) {
           </select>
         </label>
       </div>
-      <CountryList allData={searchedData} clickedCountry={clickedCountry} />
+      <div>
+        <CountryList allData={searchedData} clickedCountry={clickedCountry} />
+      </div>
     </div>
   );
 }

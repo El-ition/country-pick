@@ -7,7 +7,7 @@ import HomePage from './pages/HomePage';
 
 function App() {
   const [allData, setAllData] = useState();
-  const [highDetCount, setHighDetCount] = useState('');
+  const [highDetCount, setHighDetCount] = useState();
   useEffect(() => {
     const fetchData = async () => {
       const res = await fetch('https://restcountries.com/v2/all');
@@ -32,7 +32,7 @@ function App() {
   // console.log(highDetCount);
 
   return (
-    <>
+    <div className="app">
       <Navbar />
       {!allData ? (
         <div>Loading!</div>
@@ -42,11 +42,15 @@ function App() {
             <HomePage allData={allData} clickedCountry={clickedCountry} />
           </Route>
           <Route>
-            <CountrySpec path="/country/:name" highDetCount={highDetCount} />
+            <CountrySpec
+              path="/country/:name"
+              highDetCount={highDetCount}
+              clickedCountry={clickedCountry}
+            />
           </Route>
         </Switch>
       )}
-    </>
+    </div>
   );
 }
 

@@ -1,0 +1,14 @@
+.countryLowDet__container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  background-color: $dark-cards-color;
+  box-shadow: 0 4px 8px 0 $dark-shadow-color;
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 $dark-hover-shadow-color;
+  }
+}

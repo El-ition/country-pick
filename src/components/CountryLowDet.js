@@ -6,7 +6,7 @@ function CountryLowDet({ data, clickedCountry }) {
     clickedCountry(data.id);
   };
   return (
-    <div>
+    <div className="countryLowDet__container">
       <img src={data.flags.png} alt={data.name} />
       <h1>{data.name}</h1>
       <h3>Population: {data.population.toLocaleString()}</h3>

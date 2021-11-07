@@ -1,0 +1,6 @@
+.countryList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: $dark-background-color;
+  color: $dark-font-color;
+}
