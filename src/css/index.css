@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -8,7 +8,9 @@
 }
 
 body {
-  font-family: Poppins;
+  font-family: Nunito Sans;
+  background-color: #1a242e;
+  color: white;
 }
 
 ul {
@@ -29,6 +31,10 @@ img {
   max-width: 100%;
 }
 
+.app {
+  background-color: #1a242e;
+}
+
 .countryLowDet__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,20 +46,23 @@ img {
   margin: 1rem;
   padding: 1rem;
   border-radius: 0.3rem;
-  background-color: #3d3d3d;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.767);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.767);
+  background-color: #30414f;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.788);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.788);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .countryLowDet__container:hover {
-  -webkit-box-shadow: 0 8px 16px 0 rgba(247, 6, 6, 0.507);
-          box-shadow: 0 8px 16px 0 rgba(247, 6, 6, 0.507);
+  -webkit-box-shadow: 0 8px 16px 0 #d6b58bc7;
+          box-shadow: 0 8px 16px 0 #d6b58bc7;
 }
 
 .navbar {
-  background-color: #3d3d3d;
+  background-color: #30414f;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 1.7rem;
 }
 
 .countryList {
@@ -61,11 +70,115 @@ img {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  background-color: #181818;
-  color: white;
+  background-color: #1a242e;
 }
 
 .homepage {
-  background-color: #181818;
+  background-color: #1a242e;
+}
+
+.homepage .homepage__search {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homepage .homepage__search .homepage__search-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homepage .homepage__search .homepage__search-input input {
+  width: 20rem;
+  font-family: Nunito Sans;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0.7rem;
+  border: none;
+  background-color: #30414f;
+  border-radius: 0.3rem;
+}
+
+.homepage .homepage__search .homepage__search-input input:focus {
+  background-color: #1a242e;
+}
+
+.homepage .homepage__search .homepage__search-input input::-webkit-input-placeholder {
+  font-size: 1rem;
+  color: white;
+  opacity: 0.8;
+}
+
+.homepage .homepage__search .homepage__search-input input:-ms-input-placeholder {
+  font-size: 1rem;
+  color: white;
+  opacity: 0.8;
+}
+
+.homepage .homepage__search .homepage__search-input input::-ms-input-placeholder {
+  font-size: 1rem;
+  color: white;
+  opacity: 0.8;
+}
+
+.homepage .homepage__search .homepage__search-input input::placeholder {
+  font-size: 1rem;
+  color: white;
+  opacity: 0.8;
+}
+
+.homepage .homepage__search .homepage__search-input button {
+  font-family: Nunito Sans;
+  cursor: pointer;
+  border: none;
+  background-color: #30414f;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  border-radius: 0.15rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.homepage .homepage__search .homepage__search-input button:hover {
+  background-color: #1a242e;
+}
+
+.homepage .homepage__search .homepage__search-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homepage .homepage__search .homepage__search-select label {
+  margin-right: 0.3rem;
+}
+
+.homepage .homepage__search .homepage__search-select select {
+  font-family: Nunito Sans;
+  background-color: #30414f;
+  border: none;
+  cursor: pointer;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
 }
 /*# sourceMappingURL=index.css.map */

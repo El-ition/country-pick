@@ -1,3 +1,69 @@
 .homepage {
   background-color: $dark-background-color;
+
+  .homepage__search {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .homepage__search-input {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      input {
+        width: 20rem;
+        font-family: Nunito Sans;
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding: 0.7rem;
+        border: none;
+        // border-bottom: 2px solid $dark-hover-shadow-color;
+        background-color: $dark-cards-color;
+        // color: $dark-input-font-color;
+        border-radius: 0.3rem;
+
+        &:focus {
+          background-color: $dark-background-color;
+        }
+        &::placeholder {
+          font-size: 1rem;
+          color: $dark-font-color;
+          opacity: 0.8;
+        }
+      }
+
+      button {
+        font-family: Nunito Sans;
+        cursor: pointer;
+        border: none;
+        background-color: $dark-cards-color;
+        padding: 0.5rem;
+        margin-left: 0.5rem;
+        border-radius: 0.15rem;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: $dark-background-color;
+        }
+      }
+    }
+
+    .homepage__search-select {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      label {
+        margin-right: 0.3rem;
+      }
+      select {
+        font-family: Nunito Sans;
+        background-color: $dark-cards-color;
+        border: none;
+        cursor: pointer;
+        padding: 0.3rem;
+        border-radius: 0.2rem;
+      }
+    }
+  }
 }

@@ -62,18 +62,20 @@ function HomePage({ allData, clickedCountry }) {
   return (
     <div className="homepage">
       <div className="homepage__search">
-        <input
-          value={searchInput}
-          onChange={(e) => setSearchInput(e.target.value)}
-        />
-        <button onClick={handleSearch}>Search</button>
-
-        <label htmlFor="region">
-          Filter by region
+        <div className="homepage__search-input">
+          <input
+            placeholder="Search for Country..."
+            value={searchInput}
+            onChange={(e) => setSearchInput(e.target.value)}
+          />
+          <button onClick={handleSearch}>Search</button>
+        </div>
+        <div className="homepage__search-select">
+          <label htmlFor="region">Filter by region</label>
           <select
             id="region"
             name="region"
-            // value={selectedValue}
+            value={selectedValue}
             onChange={handleRegion}
           >
             <option value="All">All</option>
@@ -84,7 +86,7 @@ function HomePage({ allData, clickedCountry }) {
             <option value="Oceania">Oceania</option>
             <option value="Polar">Polar</option>
           </select>
-        </label>
+        </div>
       </div>
       <div>
         <CountryList allData={searchedData} clickedCountry={clickedCountry} />

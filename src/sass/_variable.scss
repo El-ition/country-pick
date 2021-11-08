@@ -3,12 +3,13 @@ $gutter-vertical: 2.5rem; // 40px
 $gutter-horizontal: 2.5rem; // 40 px
 
 // dark theme color
-$dark-background-color: rgb(24, 24, 24);
-$dark-cards-color: rgb(61, 61, 61);
+$dark-background-color: hsl(210, 28%, 14%);
+$dark-cards-color: hsl(207, 24%, 25%);
 $dark-font-color: white;
+$dark-input-font-color: hsl(0, 0%, 21%);
 
 // $dark-shadow-color: rgba(0, 0, 0, 0.3);
 // $dark-hover-shadow-color: rgba(247, 6, 6, 0.507);
 
-$dark-shadow-color: rgba(0, 0, 0, 0.767);
-$dark-hover-shadow-color: rgba(247, 6, 6, 0.507);
+$dark-shadow-color: rgba(0, 0, 0, 0.788);
+$dark-hover-shadow-color: #d6b58bc7;
