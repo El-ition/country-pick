@@ -1,8 +1,9 @@
 .countryLowDet__container {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 2rem;
+  height: 580px;
+  // padding: 1rem;
   border-radius: 0.3rem;
   background-color: $dark-cards-color;
   box-shadow: 0 4px 8px 0 $dark-shadow-color;
@@ -10,5 +11,47 @@
 
   &:hover {
     box-shadow: 0 8px 16px 0 $dark-hover-shadow-color;
+  }
+
+  img {
+    border-radius: 0.3rem 0.3rem 0 0;
+    height: 50%;
+    object-fit: fill;
+  }
+  h1,
+  h3,
+  .countryLowDet__container-link {
+    margin: 0 1.2rem;
+  }
+
+  h1 {
+    margin: 1.6rem 1.2rem;
+    font-weight: 900;
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    span {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+  }
+
+  .countryLowDet__container-link {
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 1.5rem 0;
+    padding: 1.2rem;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $dark-background-color;
+      box-shadow: 0 0 2px -1px white;
+      color: $dark-detail-color;
+    }
   }
 }

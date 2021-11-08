@@ -1,0 +1,80 @@
+.countrySpec {
+  display: flex;
+  flex-direction: column;
+
+  .countrySpec__back {
+    button {
+      font-family: Nunito Sans;
+      cursor: pointer;
+      border: none;
+      background-color: $dark-cards-color;
+      padding: 0.8rem 2rem;
+      margin: 5rem 3rem;
+      border-radius: 0.15rem;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: $dark-background-color;
+      }
+    }
+  }
+
+  .countrySpec__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // column-gap: 10rem;
+    margin: 0 2rem;
+
+    img {
+      width: 80%;
+      transition: 0.5s;
+      &:hover {
+        width: 90%;
+      }
+    }
+    .countrySpec__body-detail {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .countrySpec__body-detail-base {
+        display: flex;
+        flex-direction: column;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+      }
+      h2 {
+        font-weight: 500;
+        font-size: 1.3rem;
+        padding: 0.2rem;
+      }
+
+      span {
+        font-weight: 200;
+        font-size: 1.2rem;
+      }
+      .countrySpec__body-detail-base-divide {
+        display: flex;
+      }
+      .div2 {
+        margin-left: 2rem;
+      }
+    }
+
+    .countrySpec__body-detail-neib {
+      display: flex;
+      align-items: center;
+
+      h4 {
+        background-color: $dark-cards-color;
+        margin: 0.2rem;
+        font-weight: 400;
+        font-size: 1.2rem;
+        padding: 0.4rem;
+      }
+    }
+  }
+}

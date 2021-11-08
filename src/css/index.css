@@ -43,8 +43,8 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 2rem;
+  height: 580px;
   border-radius: 0.3rem;
   background-color: #30414f;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.788);
@@ -58,9 +58,55 @@ img {
           box-shadow: 0 8px 16px 0 #d6b58bc7;
 }
 
+.countryLowDet__container img {
+  border-radius: 0.3rem 0.3rem 0 0;
+  height: 50%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.countryLowDet__container h1,
+.countryLowDet__container h3,
+.countryLowDet__container .countryLowDet__container-link {
+  margin: 0 1.2rem;
+}
+
+.countryLowDet__container h1 {
+  margin: 1.6rem 1.2rem;
+  font-weight: 900;
+  font-size: 1.8rem;
+}
+
+.countryLowDet__container h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.countryLowDet__container h3 span {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.countryLowDet__container .countryLowDet__container-link {
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 1.5rem 0;
+  padding: 1.2rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.countryLowDet__container .countryLowDet__container-link:hover {
+  background-color: #1a242e;
+  -webkit-box-shadow: 0 0 2px -1px white;
+          box-shadow: 0 0 2px -1px white;
+  color: #d6b58b;
+}
+
 .navbar {
   background-color: #30414f;
-  padding: 1rem;
+  padding: 2rem;
   font-weight: 600;
   font-size: 1.7rem;
 }
@@ -68,8 +114,8 @@ img {
 .countryList {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   background-color: #1a242e;
 }
 
@@ -178,7 +224,124 @@ img {
   background-color: #30414f;
   border: none;
   cursor: pointer;
-  padding: 0.3rem;
+  padding: 0.5rem;
   border-radius: 0.2rem;
+  outline: none;
+}
+
+.homepage .homepage__search .homepage__search-select option {
+  border: none;
+  outline: none;
+}
+
+.countrySpec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.countrySpec .countrySpec__back button {
+  font-family: Nunito Sans;
+  cursor: pointer;
+  border: none;
+  background-color: #30414f;
+  padding: 0.8rem 2rem;
+  margin: 5rem 3rem;
+  border-radius: 0.15rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.countrySpec .countrySpec__back button:hover {
+  background-color: #1a242e;
+}
+
+.countrySpec .countrySpec__body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin: 0 2rem;
+}
+
+.countrySpec .countrySpec__body img {
+  width: 80%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.countrySpec .countrySpec__body img:hover {
+  width: 90%;
+}
+
+.countrySpec .countrySpec__body .countrySpec__body-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.countrySpec .countrySpec__body .countrySpec__body-detail .countrySpec__body-detail-base {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.countrySpec .countrySpec__body .countrySpec__body-detail h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.countrySpec .countrySpec__body .countrySpec__body-detail h2 {
+  font-weight: 500;
+  font-size: 1.3rem;
+  padding: 0.2rem;
+}
+
+.countrySpec .countrySpec__body .countrySpec__body-detail span {
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+.countrySpec .countrySpec__body .countrySpec__body-detail .countrySpec__body-detail-base-divide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.countrySpec .countrySpec__body .countrySpec__body-detail .div2 {
+  margin-left: 2rem;
+}
+
+.countrySpec .countrySpec__body .countrySpec__body-detail-neib {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.countrySpec .countrySpec__body .countrySpec__body-detail-neib h4 {
+  background-color: #30414f;
+  margin: 0.2rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding: 0.4rem;
 }
 /*# sourceMappingURL=index.css.map */
