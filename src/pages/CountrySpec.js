@@ -4,13 +4,7 @@ import { countries } from 'country-data';
 
 function CountrySpec({ highDetCount, clickedCountry }) {
   const history = useHistory();
-  console.log(highDetCount);
 
-  // useEffect(() => {
-  //   clickedCountry(highDetCount.id);
-  // }, [clickedCountry, highDetCount.id]);
-  // console.log(highDetCount);
-  // console.log(highDetCount.currencies[0].name);
   return (
     <div className="countrySpec">
       <div className="countrySpec__back">

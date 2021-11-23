@@ -2,4 +2,20 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   background-color: $dark-background-color;
+
+  @media screen and (max-width: $breakpoint-b-desc) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media screen and (max-width: $breakpoint-desc) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: $breakpoint-tablet) {
+    grid-template-columns: 500px;
+  }
+  @media screen and (max-width: $breakpoint-m-mobile) {
+    grid-template-columns: 1fr;
+  }
+  @media screen and (max-width: $breakpoint-s-mobile) {
+    grid-template-columns: 320px;
+  }
 }

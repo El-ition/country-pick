@@ -8,6 +8,7 @@ import HomePage from './pages/HomePage';
 function App() {
   const [allData, setAllData] = useState();
   const [highDetCount, setHighDetCount] = useState();
+
   useEffect(() => {
     const fetchData = async () => {
       const res = await fetch('https://restcountries.com/v2/all');
@@ -19,17 +20,13 @@ function App() {
     };
     fetchData();
   }, []);
-  // console.log(allData);
 
   const clickedCountry = (id) => {
     let newOne = allData.filter((data) => {
       return id === data.id;
     });
-
     setHighDetCount(...newOne);
   };
-
-  // console.log(highDetCount);
 
   return (
     <div className="app">

@@ -7,6 +7,18 @@
     justify-content: space-between;
     align-items: center;
 
+    @media screen and (max-width: $breakpoint-tablet) {
+      padding: 1rem;
+      flex-direction: column;
+      align-items: flex-end;
+      row-gap: 10px;
+    }
+    // @media screen and (max-width: $breakpoint-tablet) {
+    //   flex-direction: column;
+    //   align-items: flex-end;
+    //   row-gap: 10px;
+    // }
+
     .homepage__search-input {
       display: flex;
       justify-content: space-between;
@@ -30,6 +42,10 @@
           font-size: 1rem;
           color: $dark-font-color;
           opacity: 0.8;
+        }
+
+        @media screen and (max-width: $breakpoint-m-mobile) {
+          width: 15rem;
         }
       }
 

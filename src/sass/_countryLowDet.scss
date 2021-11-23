@@ -54,4 +54,11 @@
       color: $dark-detail-color;
     }
   }
+
+  @media screen and (max-width: $breakpoint-m-mobile) {
+    height: 520px;
+  }
+  @media screen and (max-width: $breakpoint-s-mobile) {
+    height: 470px;
+  }
 }

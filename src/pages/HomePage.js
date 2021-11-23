@@ -50,14 +50,12 @@ function HomePage({ allData, clickedCountry }) {
       const userSearched = searchedData.filter((dat) => {
         return dat.name.toLowerCase().includes(searchInput.toLowerCase());
       });
-      // console.log(userSearched);
       setSearchedData(userSearched);
       setSearchInput('');
     } else {
       setSearchedData(allData);
     }
   };
-  // console.log(searchedData);
 
   return (
     <div className="homepage">

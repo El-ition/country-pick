@@ -104,11 +104,35 @@ img {
   color: #d6b58b;
 }
 
+@media screen and (max-width: 480px) {
+  .countryLowDet__container {
+    height: 520px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .countryLowDet__container {
+    height: 470px;
+  }
+}
+
 .navbar {
   background-color: #30414f;
+  width: 100%;
+}
+
+.navbar h1 {
   padding: 2rem;
   font-weight: 600;
   font-size: 1.7rem;
+}
+
+@media screen and (max-width: 480px) {
+  .navbar h1 {
+    padding: 1rem 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+  }
 }
 
 .countryList {
@@ -117,6 +141,41 @@ img {
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   background-color: #1a242e;
+}
+
+@media screen and (max-width: 1224px) {
+  .countryList {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .countryList {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .countryList {
+    -ms-grid-columns: 500px;
+        grid-template-columns: 500px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .countryList {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .countryList {
+    -ms-grid-columns: 320px;
+        grid-template-columns: 320px;
+  }
 }
 
 .homepage {
@@ -134,6 +193,20 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .homepage .homepage__search {
+    padding: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    row-gap: 10px;
+  }
 }
 
 .homepage .homepage__search .homepage__search-input {
@@ -185,6 +258,12 @@ img {
   font-size: 1rem;
   color: white;
   opacity: 0.8;
+}
+
+@media screen and (max-width: 480px) {
+  .homepage .homepage__search .homepage__search-input input {
+    width: 15rem;
+  }
 }
 
 .homepage .homepage__search .homepage__search-input button {
@@ -343,5 +422,16 @@ img {
   font-weight: 400;
   font-size: 1.2rem;
   padding: 0.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .countrySpec .countrySpec__back button {
+    margin: 1rem;
+  }
+  .countrySpec .countrySpec__body {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

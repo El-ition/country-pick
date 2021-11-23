@@ -22,7 +22,6 @@
   .countrySpec__body {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    // column-gap: 10rem;
     margin: 0 2rem;
 
     img {
@@ -75,6 +74,17 @@
         font-size: 1.2rem;
         padding: 0.4rem;
       }
+    }
+  }
+  @media screen and (max-width: $breakpoint-tablet) {
+    .countrySpec__back {
+      button {
+        margin: 1rem;
+      }
+    }
+    .countrySpec__body {
+      grid-template-columns: 1fr;
+      row-gap: 20px;
     }
   }
 }
